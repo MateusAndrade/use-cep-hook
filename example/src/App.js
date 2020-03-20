@@ -7,7 +7,7 @@ import './App.css';
 const App = () => {
   const [postalCode, setPostalCode] = useState("");
   
-  const [loading, cep, error] = useViaCep(postalCode);
+  // console.log(useViaCep(postalCode));
 
   return (
     <div className="form">
