@@ -1,0 +1,28 @@
+{
+  "name": "use-via-cep",
+  "version": "1.0.0",
+  "description": "A simple React Hooks to fetch info from the API https://viacep.com.br",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateusAndrade/useViaCep.git"
+  },
+  "keywords": [
+    "cep",
+    "postalcode",
+    "hook",
+    "react"
+  ],
+  "author": "MateusAndrade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MateusAndrade/useViaCep/issues"
+  },
+  "homepage": "https://github.com/MateusAndrade/useViaCep#readme",
+  "dependencies": {
+    "react": "^16.13.1"
+  }
+}
