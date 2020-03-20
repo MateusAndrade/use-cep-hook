@@ -6,8 +6,7 @@
     "jsx": "react",
     "declaration": true,
     "pretty": true,
-    "rootDir": "",
-    "outDir": "lib",
+    "rootDir": "src",
     "sourceMap": false,
     "strict": true,
     "esModuleInterop": true,
@@ -16,6 +15,7 @@
     "noImplicitReturns": true,
     "noImplicitAny": false,
     "noFallthroughCasesInSwitch": true,
+    "outDir": "lib",
     "lib": [
       "es2018",
       "dom"
@@ -24,7 +24,6 @@
   },
   "exclude": [
     "node_modules",
-    "example",
-    "lib"
+    "example"
   ]
 }
