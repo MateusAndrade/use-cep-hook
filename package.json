@@ -4,6 +4,7 @@
   "description": "A simple React Hooks to fetch info from the API https://viacep.com.br",
   "main": "index.tsx",
   "scripts": {
+    "build": "yarn tsc",
     "lint": "eslint . --ext .ts,.tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
