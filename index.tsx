@@ -1,5 +1,17 @@
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 
+type Cep = {
+  cep: string;
+  logradouro: string;
+  complemento: string;
+  bairro: string;
+  localidade: string;
+  uf: string;
+  unidade: string;
+  ibge: string;
+  gia: string;
+}
+
 const INITIAL_CEP = {
   cep: "",
   logradouro: "",
@@ -12,18 +24,18 @@ const INITIAL_CEP = {
   gia: ""
 };
 
-const getViaCep = cep => `https://viacep.com.br/ws/${cep}/json`;
+const getViaCep = (cep: string) => `https://viacep.com.br/ws/${cep}/json`;
 
-const useViaCep = search => {
-  const cleanCep = useMemo(() => search && search.replace(/\D+/g, ""), [
+const useViaCep = (search: string) => {
+  const cleanCep: string = useMemo(() => search && search.replace(/\D+/g, ""), [
     search
   ]);
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState<boolean>(false);
 
-  const [cep, setCep] = useState(INITIAL_CEP);
+  const [cep, setCep] = useState<Cep>(INITIAL_CEP);
 
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<unknown>(null);
 
   const searchCep = useCallback(async () => {
     setLoading(true);
