@@ -4,6 +4,7 @@
   "description": "A simple React Hooks to fetch info from the API https://viacep.com.br",
   "main": "index.tsx",
   "scripts": {
+    "lint": "eslint . --ext .ts,.tsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -35,13 +36,14 @@
     "@typescript-eslint/parser": "^2.24.0",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",
-    "husky": "^4.2.3"
+    "husky": "^4.2.3",
+    "typescript": "^3.7.3"
   },
   "hooks": {
     "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
     "pre-commit": "yarn lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint"
+    "*.{ts,tsx}": "eslint"
   }
 }
