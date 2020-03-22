@@ -27,8 +27,8 @@ Every time that the argument passed to the hooks get a length of 8, this will tr
 
 ## TODO:
 
-[ ] Port to TS
-[ ] Apply some cool CSS to `example`
-[ ] Write TESTS!
-[ ] Deploy example to `surge.sh`!
-[ ] Configure Github Actions
+- [ ] Port to TS
+- [ ] Apply some cool CSS to `example`
+- [ ] Write TESTS!
+- [ ] Deploy example to `surge.sh`!
+- [ ] Configure Github Actions
