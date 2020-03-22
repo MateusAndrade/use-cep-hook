@@ -1,5 +1,5 @@
 {
-  "name": "use-via-cep",
+  "name": "useViaCep",
   "version": "1.0.0",
   "description": "A simple React Hook to fetch info from the https://viacep.com.br",
   "main": "src/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MateusAndrade/use-via-cep.git"
+    "url": "git+https://github.com/MateusAndrade/useViaCep.git"
   },
   "keywords": [
     "cep",
@@ -20,9 +20,9 @@
   "author": "MateusAndrade",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MateusAndrade/use-via-cep/issues"
+    "url": "https://github.com/MateusAndrade/useViaCep/issues"
   },
-  "homepage": "https://github.com/MateusAndrade/use-via-cep#readme",
+  "homepage": "https://github.com/MateusAndrade/useViaCep#readme",
   "peerDependecies": {
     "react": "^16.8.0"
   },
