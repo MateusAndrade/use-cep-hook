@@ -1,4 +1,4 @@
-declare module "use-via-cep" {
+declare module "use-cep-hook" {
   export type Cep = {
     cep: string;
     logradouro: string;

@@ -1,13 +1,13 @@
-# use-via-cep :earth_americas:
+# use-cep-hook :earth_americas:
 
 This is a simple React Hooks that let you search for a brazillian postal-code on: https://viacep.com.br. :squirrel:
 
 # How to use
 
-Simply import `use-via-cep` on your component, then call this on that way:
+Simply import `use-cep-hook` on your component, then call this on that way:
 
 ```jsx
-import useViaCep from "use-via-cep";
+import useViaCep from "use-cep-hook";
 
 const Foo = () => {
   const [postalCode, setPostalCode] = useState("");

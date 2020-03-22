@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import useViaCep from "use-via-cep";
+import useViaCep from "use-cep-hook";
 
 import "./App.css";
 
