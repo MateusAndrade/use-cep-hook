@@ -20,9 +20,9 @@
   "author": "MateusAndrade",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MateusAndrade/useViaCep/issues"
+    "url": "https://github.com/MateusAndrade/use-via-cep/issues"
   },
-  "homepage": "https://github.com/MateusAndrade/useViaCep#readme",
+  "homepage": "https://github.com/MateusAndrade/use-via-cep#readme",
   "peerDependecies": {
     "react": "^16.8.0"
   },
