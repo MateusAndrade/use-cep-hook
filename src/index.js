@@ -27,6 +27,7 @@ const useViaCep = (search) => {
 
   const searchCep = useCallback(async () => {
     setLoading(true);
+    setError(null);
 
     try {
       const response = await fetch(getViaCep(cleanCep));
@@ -36,7 +37,7 @@ const useViaCep = (search) => {
       const hasError = responseJson.erro;
 
       if (hasError) {
-        throw new Error(`Cep: ${cep} not found`)
+        throw new Error(`Cep not found`)
       }
 
       setCep(responseJson);
