@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/MateusAndrade/use-cep-hook/issues"
   },
-  "homepage": "https://github.com/MateusAndrade/use-cep-hook#readme",
+  "homepage": "https://MateusAndrade.github.io/use-cep-hook",
   "peerDependecies": {
     "react": "^16.8.0"
   },
