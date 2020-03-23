@@ -1,6 +1,10 @@
 # use-cep-hook :earth_americas:
 
-This is a simple React Hooks that let you search for a brazillian postal-code on: https://viacep.com.br. :squirrel:
+This is a simple React Hooks that let you search for a brazillian postal-code on: https://viacep.com.br. 
+
+# Installation
+
+Just run a ```yarn add use-cep-hook``` or ```npm i --save use-cep-hook```
 
 # How to use
 
