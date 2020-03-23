@@ -24,7 +24,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: cd example
       - run: yarn install --frozen-lockfile
-      - run: cd example;; yarn build
+      - run: cd example
+      - run: yarn build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
