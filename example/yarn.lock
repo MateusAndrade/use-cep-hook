@@ -10081,9 +10081,10 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-"use-cep-hook@git+ssh://git@github.com:MateusAndrade/use-cep-hook.git":
+use-cep-hook@1.0.2:
   version "1.0.2"
-  resolved "git+ssh://git@github.com:MateusAndrade/use-cep-hook.git#01423e7f49550aa3a56578fcffeb7ab7d51e4fba"
+  resolved "https://registry.yarnpkg.com/use-cep-hook/-/use-cep-hook-1.0.2.tgz#09fdb14034def6db1fe1d648c663e995c852691e"
+  integrity sha512-J0sXHRcWVnt9O32L1jwf+sA87acPhgpyziZpB5EwwQjiM/kDx+p6EEUL+CrJecz6ySMwZw7OrOwKBOoOqzOyFw==
 
 use@^3.1.0:
   version "3.1.1"
