@@ -13,5 +13,5 @@ declare module "use-cep-hook" {
 
   export type HookReturn = [boolean, Cep, unknown];
 
-  export function useViaCep(postalCode: string): HookReturn;
+  export default function (postalCode: string): HookReturn;
 }

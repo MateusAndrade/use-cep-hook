@@ -1,6 +1,6 @@
 {
   "name": "use-cep-hook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple React Hook to fetch info from the https://viacep.com.br",
   "main": "src/index.js",
   "types": "index.d.ts",

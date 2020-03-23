@@ -33,13 +33,18 @@ const useViaCep = (search) => {
 
       const responseJson = await response.json();
 
+      const hasError = responseJson.erro;
+
+      if (hasError) {
+        throw new Error(`Cep: ${cep} not found`)
+      }
+
       setCep(responseJson);
 
       setLoading(false);
     } catch (error) {
       setError(error);
       setLoading(false);
-      setCep(INITIAL_CEP);
     }
   }, [cleanCep]);
 
