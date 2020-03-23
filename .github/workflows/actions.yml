@@ -31,7 +31,7 @@ jobs:
             ${{ runner.OS }}-
       
       - run: cd example && yarn install --frozen-lockfile
-      - run: cd example && yarn build
+      - run: cd example && yarn build && ls -la
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
