@@ -9,7 +9,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.0",
-    "use-cep-hook": "file:../"
+    "use-cep-hook": "file:.."
   },
   "scripts": {
     "start": "react-scripts start",
