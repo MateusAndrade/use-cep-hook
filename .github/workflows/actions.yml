@@ -14,10 +14,7 @@ jobs:
         node-version: [12.x]
 
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true
-          persist-credentials: false
+      - uses: actions/checkout@v1
 
       - name: Build Example app  ${{ matrix.node-version }}
         uses: actions/setup-node@v1
