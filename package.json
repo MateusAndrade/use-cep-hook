@@ -41,5 +41,8 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": "eslint"
+  },
+  "dependencies": {
+    "cep-promise": "^3.0.9"
   }
 }
