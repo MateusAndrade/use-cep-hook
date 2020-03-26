@@ -1,57 +1,17 @@
-import { useState, useEffect, useMemo, useCallback } from "react";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
 
-import fetchCep from "cep-promise";
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-const INITIAL_CEP = {
-  cep: "",
-  state: "",
-  city: "",
-  street: "",
-  neighborhood: ""
-};
-
-const useViaCep = search => {
-  const cleanCep = useMemo(() => search && search.replace(/\D+/g, ""), [
-    search
-  ]);
-
-  const [loading, setLoading] = useState(false);
-
-  const [cep, setCep] = useState(INITIAL_CEP);
-
-  const [error, setError] = useState(null);
-
-  const searchCep = useCallback(async () => {
-    setLoading(true);
-    setError(null);
-
-    try {
-      const response = await fetchCep(cleanCep);
-
-      const responseJson = await response.json();
-
-      const hasError = responseJson.erro;
-
-      if (hasError) {
-        throw new Error(`Cep not found`);
-      }
-
-      setCep(responseJson);
-
-      setLoading(false);
-    } catch (error) {
-      setError(error);
-      setLoading(false);
-    }
-  }, [cleanCep]);
-
-  useEffect(() => {
-    if (cleanCep.length === 8) {
-      searchCep();
-    }
-  }, [cleanCep, searchCep]);
-
-  return [loading, cep, error];
-};
-
-export default useViaCep;
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
