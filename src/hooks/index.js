@@ -19,11 +19,11 @@ const useCep = search => {
 
   const [cep, setCep] = useState(INITIAL_CEP);
 
-  const [error, setError] = useState(null);
+  const [error, setError] = useState({ hasError: false, message: "" });
 
   const searchCep = useCallback(async () => {
     setLoading(true);
-    setError(null);
+    setError({ hasError: false, message: "" });
 
     try {
       const response = await fetchCep(cleanCep);
@@ -35,7 +35,7 @@ const useCep = search => {
       const message = error instanceof Object ? String(error) : error;
 
       setCep(INITIAL_CEP);
-      setError({ message });
+      setError({ hasError: true, message });
       setLoading(false);
     }
   }, [cleanCep]);

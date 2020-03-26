@@ -7,7 +7,9 @@ declare module "use-cep-hook" {
     neighborhood: string;
   };
 
-  export type HookReturn = [boolean, Cep, unknown];
+  export type ErrorCep = { hasError: boolean, message: string };
+
+  export type HookReturn = [boolean, Cep, ErrorCep];
 
   export default function(postalCode: string | number): HookReturn;
 }

@@ -24,7 +24,7 @@ const App = () => {
           <ul>
             <li>Loading: {String(loading)}</li>
             <li>CEP: {JSON.stringify(cep)}</li>
-            {error && error.message && <li>Error: {String(error.message)}</li>}
+            <li>Error: {JSON.stringify(error)}</li>}
           </ul>
         </div>
       </div>
