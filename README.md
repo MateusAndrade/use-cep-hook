@@ -1,6 +1,6 @@
 # use-cep-hook :earth_americas: ![npm](https://img.shields.io/npm/v/use-cep-hook)
 
-This is a simple React Hooks that let you search for a brazillian postal-code on: https://viacep.com.br. 
+This is a simple React Hooks that let you search for a brazillian postal-code.  
 
 # Installation
 

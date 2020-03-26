@@ -1,7 +1,7 @@
 {
   "name": "use-cep-hook",
   "version": "1.0.3",
-  "description": "A simple React Hook to fetch info from the https://viacep.com.br",
+  "description": "A simple React Hook to fetch info of a CEP!",
   "main": "src/hooks/index.js",
   "types": "index.d.ts",
   "repository": {
@@ -28,22 +28,22 @@
     "lint": "eslint . --ext .js"
   },
   "dependencies": {
+    "cep-promise": "^3.0.9"
+  },
+  "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "cep-promise": "^3.0.9",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
-  },
-  "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.9",
-    "prettier": "^2.0.2"
+    "prettier": "^2.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
   },
   "peerDependecies": {
     "react": "^16.8.0"
