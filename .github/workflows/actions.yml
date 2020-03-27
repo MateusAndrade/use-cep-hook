@@ -39,11 +39,8 @@ jobs:
       - name: Build static example
         run: yarn build
 
-      - name: Deploy example to gh-pages
-        run: yarn deploy-example --user "MateusAndrade $GH_EMAIL"
-        env: 
-          GH_EMAIL: ${{ secrets.GH_EMAIL }}
-
       - name: Build TS
         run: yarn build:hook; ls -la    
-  
+
+      - name: Deploy example to gh-pages
+        run: yarn deploy-example --user "$GITHUB_ACTOR test@foo.com"
