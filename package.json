@@ -31,11 +31,15 @@
     "cep-promise": "^3.0.9"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
+    "@types/jest": "^25.1.4",
+    "@types/node": "^12.12.31",
+    "@types/react": "^16.9.26",
+    "@types/react-dom": "^16.9.5",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",
     "husky": "^4.2.3",
@@ -43,7 +47,8 @@
     "prettier": "^2.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "typescript": "^3.8.3"
   },
   "peerDependecies": {
     "react": "^16.8.0"

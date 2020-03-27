@@ -2,7 +2,19 @@ import { useState, useEffect, useMemo, useCallback } from "react";
 
 import fetchCep from "cep-promise";
 
-const INITIAL_CEP = {
+export type Cep = {
+  cep: string;
+  state: string;
+  city: string;
+  street: string;
+  neighborhood: string;
+};
+
+export type ErrorCep = { hasError: boolean, message: string };
+
+export type HookReturn = [boolean, Cep, ErrorCep];
+
+const INITIAL_CEP: Cep = {
   cep: "",
   state: "",
   city: "",
@@ -10,16 +22,16 @@ const INITIAL_CEP = {
   neighborhood: ""
 };
 
-const useCep = search => {
-  const cleanCep = useMemo(() => search && search.replace(/\D+/g, ""), [
+const useCep = (search: string | number): HookReturn => {
+  const cleanCep: string = useMemo(() => String(search).replace(/\D+/g, ""), [
     search
   ]);
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState<boolean>(false);
 
-  const [cep, setCep] = useState(INITIAL_CEP);
+  const [cep, setCep] = useState<Cep>(INITIAL_CEP);
 
-  const [error, setError] = useState({ hasError: false, message: "" });
+  const [error, setError] = useState<ErrorCep>({ hasError: false, message: "" });
 
   const searchCep = useCallback(async () => {
     setLoading(true);
@@ -32,7 +44,7 @@ const useCep = search => {
 
       setLoading(false);
     } catch (error) {
-      const message = error instanceof Object ? String(error) : error;
+      const message: string = error instanceof Object ? String(error) : error;
 
       setCep(INITIAL_CEP);
       setError({ hasError: true, message });
