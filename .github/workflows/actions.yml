@@ -1,4 +1,4 @@
-name: Deploy Example App
+name: deploy
 
 on:
   push:
@@ -41,6 +41,3 @@ jobs:
 
       - name: Build Hook
         run: yarn build:hook
-
-      - name: Deploy example to gh-pages
-        run: yarn deploy-example --user "$GITHUB_ACTOR <test@foo.com>"
