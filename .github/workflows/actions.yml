@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Build Example app  ${{ matrix.node-version }}
+      - name: Build Example app - ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
@@ -33,11 +33,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       
-      - run: cd example && yarn install --frozen-lockfile
-      - run: cd example && yarn build
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./example/build
+      - name: Build static example
+        run: yarn build
+
+      - name: Deploy example to gh-pages
+        run: yarn deploy-example
+
+      - name: Build TS
+        run: yarn build:hook; ls -la    
+  

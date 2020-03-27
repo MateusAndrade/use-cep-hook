@@ -36,5 +36,5 @@ You can check the full implementation [here](https://github.com/MateusAndrade/us
 - [x] Port to TS
 - [ ] Apply some cool CSS to `example`
 - [ ] Write TESTS!
-- [ ] Deploy example to `surge.sh`!
+- [ ] Deploy example to GH pages!
 - [ ] Configure Github Actions

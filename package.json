@@ -26,6 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:hook": "tsc --project tsconfig-lib.json",
+    "deploy-example": "gh-pages -d build",
     "lint": "eslint . --ext .js"
   },
   "dependencies": {
@@ -43,6 +44,7 @@
     "@types/react-dom": "^16.9.5",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",
+    "gh-pages": "^2.2.0",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.9",
     "prettier": "^2.0.2",
