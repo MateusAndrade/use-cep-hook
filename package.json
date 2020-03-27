@@ -1,9 +1,9 @@
 {
   "name": "use-cep-hook",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A simple React Hook to fetch info of a CEP!",
-  "main": "src/hooks/index.js",
-  "types": "index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MateusAndrade/use-cep-hook.git"
@@ -25,6 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "build:hook": "tsc --project tsconfig-lib.json",
     "lint": "eslint . --ext .js"
   },
   "dependencies": {
