@@ -40,9 +40,9 @@ jobs:
         run: yarn build
 
       - name: Deploy example to gh-pages
-        with: 
-          GH_EMAIL: ${{ secrets.GH_EMAIL }}
         run: yarn deploy-example --user "MateusAndrade $GH_EMAIL"
+        env: 
+          GH_EMAIL: ${{ secrets.GH_EMAIL }}
 
       - name: Build TS
         run: yarn build:hook; ls -la    
