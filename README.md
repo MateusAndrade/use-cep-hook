@@ -11,12 +11,12 @@ Just run a ```yarn add use-cep-hook``` or ```npm i --save use-cep-hook```
 Simply import `use-cep-hook` on your component, then call this on that way:
 
 ```jsx
-import useViaCep from "use-cep-hook";
+import useCep from "use-cep-hook";
 
 const Foo = () => {
   const [postalCode, setPostalCode] = useState("");
 
-  const [loading, cep, error] = useViaCep(postalCode);
+  const [loading, cep, error] = useCep(postalCode);
 
   return (
     <div className="field">
@@ -27,11 +27,13 @@ const Foo = () => {
 };
 ```
 
-Every time that the argument passed to the hooks get a length of 8, this will trigger a call to the API, changing the `loading` param to `true`.
+Every time that a valid CEP is passed to this hooks, this will cause a side effect that will search for the updated value.
+
+You can check the full implementation [here](https://github.com/MateusAndrade/use-cep-hook/blob/master/src/hooks/index.tsx)!
 
 ## TODO:
 
-- [ ] Port to TS
+- [x] Port to TS
 - [ ] Apply some cool CSS to `example`
 - [ ] Write TESTS!
 - [ ] Deploy example to `surge.sh`!
