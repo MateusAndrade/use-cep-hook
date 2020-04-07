@@ -1,4 +1,7 @@
-# use-cep-hook :earth_americas: ![npm](https://img.shields.io/npm/v/use-cep-hook)
+# use-cep-hook :earth_americas: 
+
+[![npm](https://img.shields.io/npm/v/use-cep-hook)](https://www.npmjs.com/package/use-cep-hook)
+
 
 This is a simple React Hooks that let you search for a brazillian postal-code.  
 
