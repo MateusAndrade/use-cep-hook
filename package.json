@@ -30,7 +30,7 @@
     "lint": "eslint . --ext .js"
   },
   "dependencies": {
-    "cep-promise": "^3.0.9"
+    "cep-promise": "^4.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "16.1.0",
