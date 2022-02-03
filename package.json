@@ -42,7 +42,7 @@
     "@types/node": "16.11.22",
     "@types/react": "17.0.39",
     "@types/react-dom": "16.9.14",
-    "eslint": "6.8.0",
+    "eslint": "8.8.0",
     "eslint-plugin-react": "7.28.0",
     "gh-pages": "2.2.0",
     "husky": "7.0.4",
