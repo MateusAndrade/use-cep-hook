@@ -21,14 +21,22 @@
       "es2018",
       "dom"
     ],
-    "importHelpers": true
+    "importHelpers": true,
+    "skipLibCheck": true
   },
+  "include": [
+    "src/hooks/index.tsx"
+  ],
   "exclude": [
     "node_modules",
     "src/index.tsx",
     "src/App.tsx",
     "src/App.test.tsx",
     "src/serviceWorker.ts",
-    "src/setupTests.ts"
+    "src/setupTests.ts",
+    "**/*.test.tsx",
+    "**/*.test.ts",
+    "vite.config.ts",
+    "eslint.config.mjs"
   ]
 }

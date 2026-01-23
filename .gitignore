@@ -2,6 +2,7 @@
 node_modules
 lib
 dist
+coverage
 scripts/flow/*/.flowconfig
 *~
 *.pyc
