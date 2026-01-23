@@ -43,8 +43,8 @@ const useCep = (search: string | number): HookReturn => {
       setCep(response);
 
       setLoading(false);
-    } catch (error) {
-      const message: string = error instanceof Object ? String(error) : error;
+    } catch (error: unknown) {
+      const message: string = error instanceof Object ? String(error) : String(error);
 
       setCep(INITIAL_CEP);
       setError({ hasError: true, message });

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import './App.css';
 
@@ -24,7 +24,7 @@ const App = () => {
           <ul>
             <li>Loading: {String(loading)}</li>
             <li>CEP: {JSON.stringify(cep)}</li>
-            <li>Error: {JSON.stringify(error)}</li>}
+            <li>Error: {JSON.stringify(error)}</li>
           </ul>
         </div>
       </div>
